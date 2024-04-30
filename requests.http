@@ -1,0 +1,29 @@
+###
+POST http://localhost:3000/api/usuario HTTP/1.1
+Content-Type: application/json
+
+{
+    "Nombre":"Manuel Belgrano",
+    "edad": 50,
+    "email": "MBelgrano@email.com"
+}
+###
+
+GET http://localhost:3000/api/usuario HTTP/1.1
+
+###
+GET http://localhost:3000/api/usuario/66303607effad22fa5f8c5ef HTTP/1.1
+
+###
+PUT http://localhost:3000/api/usuario/66303607effad22fa5f8c5ef HTTP/1.1
+Content-Type: application/json
+
+{
+    "Nombre":"Manuel Belgrano",
+    "edad": 50,
+    "email": "MBelgrano@emails.com"
+}
+
+###
+DELETE  http://localhost:3000/api/usuario/66303609effad22fa5f8c5f1 HTTP/1.1
+
